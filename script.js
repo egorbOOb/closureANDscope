@@ -41,7 +41,7 @@ function getNumberDesiredRange(str) {
         //return confirm('Поздравляю, Вы угадали!!! Хотели бы сыграть ещё?');
     } else if (secretNumber !== guessedNumber && secretNumber <= 100 && secretNumber >= 1) {
         tr -= 1;
-        getNumberDesiredRange('Загаданное число меньше.' + ' Осталось попыток: ' + tr)         
+        getNumberDesiredRange('Не угадали! ' + ' Осталось попыток: ' + tr)         
     } else if (secretNumber > 100 && isNumber(secretNumber) && tr > 1) {
         tr -= 1;
         getNumberDesiredRange('Загаданное число меньше.' + ' Осталось попыток: ' + tr)         
